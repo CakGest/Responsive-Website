@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h4 {
+  font-weight: bold;
+  font-size: 30px;
+}
+
+p {
+  color: #aca9a9;
+}
+
+h1 {
+  font-family: "lora";
+  font-weight: bold;
+  font-size: 55px;
+}
+
+.img-connect {
+  width: 100%;
+}
+
+.button {
+  padding: 10px 25px;
+  background-color: #ffffff;
+}
+
+.bg-update {
+  background: #13005a;
+  color: #ffffff;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.p-update {
+  color: #ffffff;
+}
+
+h5 {
+  font-weight: bold;
+}
