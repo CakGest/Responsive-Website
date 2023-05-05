@@ -1,87 +1,324 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Asean Youth Forum</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="assets/img/logo.png" /> Asean Youth Forum</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Dropdown a
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled">Disabled</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Dropdown a
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled">Disabled</a>
-                    </li>
-                </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
-            </div>
+          </form>
         </div>
+      </div>
     </nav>
-    
-<!-- Carousel -->
-        <div id="carouselExampleIndicators" class="carousel slide">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                    aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                    aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="assets/img/1.png" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="assets/img/2.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="assets/img/3.jpeg" class="d-block w-100" alt="...">
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
+
+    <!-- Carousel -->
+    <div id="carouselExampleIndicators" class="carousel slide">
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="assets/img/4.png" class="d-block w-100" alt="..." />
         </div>
+        <div class="carousel-item">
+          <img src="assets/img/2.jpg" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item">
+          <img src="assets/img/3.jpeg" class="d-block w-100" alt="..." />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <div class="text-center m-3">
+      <h4>Connect</h4>
+      <p>Stay Connected With AYF</p>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-sm-12">
+          <img src="assets/img/woman.png" class="img-connect" alt="" />
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <h1>You are not alone. You have peers.</h1>
+          <h5 class="mt-4 mb-4">
+            At AYF You Can Connect With Others Everywhere, Anybody With the
+            Platform that has been Provided
+          </h5>
+          <button class="button">Read More</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Blue Line Update -->
+    <div class="bg-update text-center my-5">
+      <h4 class="update-h4">Update</h4>
+      <p class="p-update">Trending Articles About Youth</p>
+    </div>
+
+    <!-- Line News 1 -->
+    <div class="container text-center">
+      <div class="row align-items-start">
+        <div class="col-md-4">
+          <div class="card" style="width: 100%">
+            <img src="assets/img/news1.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Youth Leading Series</h5>
+              <p class="card-text">
+                Dukung Keketuaan Indonesia Pada ASEAN 2023, Kemenko PMK Adakan
+                Live IG dan Zoominar ASEAN Youth Leading Series
+              </p>
+              <a
+                href="https://www.kemenkopmk.go.id/dukung-keketuaan-indonesia-pada-asean-2023-kemenko-pmk-adakan-live-ig-dan-zoominar-asean-youth"
+                class="btn btn-primary"
+                >More</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card" style="width: 100%">
+            <img src="assets/img/news2.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Asean Youth Dialogue</h5>
+              <p class="card-text">
+                Kementerian Luar Negeri menggelar acara ASEAN Youth Dialogue on
+                Development for Sustainable Development Goals
+              </p>
+              <a
+                href="https://news.detik.com/berita/d-6666898/buka-asean-youth-dialogue-menlu-bicara-pentingnya-inovasi-bikinan-pemuda."
+                class="btn btn-primary"
+                >More</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card" style="width: 100%">
+            <img src="assets/img/news3.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">
+                Kontribusi Pemikiran dan Pengalaman Terbaik
+              </h5>
+              <p class="card-text">
+                Kontribusi Pemikiran dan Pengalaman Terbaik di ASEAN Youth
+                Dialogue 2023
+              </p>
+              <a
+                href="https://www.liputan6.com/lifestyle/read/5247968/memberi-kontribusi-pemikiran-dan-pengalaman-terbaik-di-asean-youth-dialogue-2023"
+                class="btn btn-primary"
+                >More</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Line News 2 -->
+    <div class="container text-center mt-5">
+      <div class="row align-items-start">
+        <div class="col-md-4">
+          <div class="card" style="width: 100%">
+            <img src="assets/img/news1.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Youth Leading Series</h5>
+              <p class="card-text">
+                Dukung Keketuaan Indonesia Pada ASEAN 2023, Kemenko PMK Adakan
+                Live IG dan Zoominar ASEAN Youth Leading Series
+              </p>
+              <a
+                href="https://www.kemenkopmk.go.id/dukung-keketuaan-indonesia-pada-asean-2023-kemenko-pmk-adakan-live-ig-dan-zoominar-asean-youth"
+                class="btn btn-primary"
+                >More</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card" style="width: 100%">
+            <img src="assets/img/news2.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Asean Youth Dialogue</h5>
+              <p class="card-text">
+                Kementerian Luar Negeri menggelar acara ASEAN Youth Dialogue on
+                Development for Sustainable Development Goals
+              </p>
+              <a
+                href="https://news.detik.com/berita/d-6666898/buka-asean-youth-dialogue-menlu-bicara-pentingnya-inovasi-bikinan-pemuda."
+                class="btn btn-primary"
+                >More</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card" style="width: 100%">
+            <img src="assets/img/news3.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">
+                Kontribusi Pemikiran dan Pengalaman Terbaik
+              </h5>
+              <p class="card-text">
+                Kontribusi Pemikiran dan Pengalaman Terbaik di ASEAN Youth
+                Dialogue 2023
+              </p>
+              <a
+                href="https://www.liputan6.com/lifestyle/read/5247968/memberi-kontribusi-pemikiran-dan-pengalaman-terbaik-di-asean-youth-dialogue-2023"
+                class="btn btn-primary"
+                >More</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Blue Line About -->
+    <div class="bg-update my-5">
+      <div class="container">
+        <div class="row align-items-start">
+          <div class="col-md-3">
+            <img src="assets/img/logo.png" alt="" />
+            <p>
+              Kami menyadari akan kebutuhan kolaborasi dengan berbagai pihak
+              lain untuk menjadikan jejaring ini sebagai pemacu dan pengungkit
+              ekosistem keberdayaan warga, lebih dari sekedar platform
+              penggalangan sumber daya.
+            </p>
+          </div>
+
+          <div class="col-md-3 text-center">
+            <h5 class="mb-5">Key</h5>
+            <p>Youth</p>
+            <p>Connect</p>
+            <p>Communication</p>
+            <p>Blend</p>
+          </div>
+
+          <div class="col-md-3 text-center">
+            <h5 class="mb-5">Company</h5>
+            <p>Home</p>
+            <p>About</p>
+            <p>Article</p>
+            <p>Community</p>
+          </div>
+
+          <div class="col-md-3 text-center">
+            <h5 class="mb-5">Follow Us</h5>
+            <img class="pe-2" src="assets/img/facebook.png" alt="" />
+            <img class="pe-2" src="assets/img/github.png" alt="" />
+            <img class="pe-2" src="assets/img/telegram.png" alt="" />
+            <img class="pe-2" src="assets/img/instagram.png" alt="" />
+            <img src="assets/img/figma.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+
     <script src="assets/js/bootstrap.min.js"></script>
-</body>
+  </body>
 </html>
