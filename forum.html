@@ -1,19 +1,27 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/forum.css">
     <link rel="stylesheet" href="assets/css/style.css" />
-    <title>Document</title>
+
+    <script src="assets/js/forum.js" defer></script>
+
+    <title>forum</title>
   </head>
   <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
-          <img src="assets/img/logo.png" / Asean Youth Forum</a
+          <img src="assets/img/logo.png" /> Asean Youth Forum</a
         >
         <button
           class="navbar-toggler"
@@ -56,57 +64,21 @@
       </div>
     </nav>
 
-    <!-- Background About -->
     <div>
-      <img class="" style="width: 100%" src="assets/img/bg about.png" alt="" />
+      <img src="assets/img/forumbg.jpeg" class="img-fluid" alt="forum">
     </div>
 
-    <div class="text-center m-3">
-      <h4>About</h4>
-    </div>
-
-    <div class="container">
-      <div class="row">
-        <div class="col-md-5 col-sm-12">
-          <img src="assets/img/asean.png" class="img-connect" alt="" />
-        </div>
-        <div class="col-md-6 col-sm-12">
-          <h1>Asean Youth Forum</h1>
-          <h5 class="mt-4 mb-4">
-            Asean Youth Forum (AYF) adalah sebuah gerakan yang mewakili dan
-            memperjuangkan kaum muda di ASEAN untuk menyuarakan keprihatinan dan
-            strategi mereka untuk mencapai ASEAN yang lebih baik. AYF telah
-            menjadi platform pemuda di ASEAN untuk menyuarakan suara mereka dan
-            mengklaim hak-hak mereka untuk komunitas regional yang
-            berkelanjutan, inklusif, berpusat pada orang, dan digerakkan oleh
-            pemuda. Jaringan ini bertujuan untuk melembagakan dan mendirikan
-            cabang nasionalnya untuk memfokuskan keterlibatan pada isu-isu lokal
-            yang penting dan tepat waktu yang mempengaruhi kaum muda, dan
-            mengkonsolidasikan proposal kebijakan dan agenda untuk diajukan ke
-            kantor-kantor ASEAN yang relevan.
-          </h5>
-        </div>
+    <div class="container shadow">
+      <div class="text-center m-3">
+        <h2 class="text-center font-weight-bold" style="font-size: 2rem; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);">Forum</h2>
       </div>
+
+    <input class="btn btn-primary" type="submit" value="Create Forum" onclick="window.location.href='create_forum.html'">
+
+      <div id="card-container"></div>
     </div>
 
-    <div>
-      <img class="" style="width: 100%" src="assets/img/5.png" alt="" />
-    </div>
-
-    <h5 class="text-center mt-4">
-      Asean Youth Forum (AYF) adalah sebuah gerakan yang mewakili dan
-      memperjuangkan kaum muda di ASEAN untuk menyuarakan keprihatinan dan
-      strategi mereka untuk mencapai ASEAN yang lebih baik. AYF telah menjadi
-      platform pemuda di ASEAN untuk menyuarakan suara mereka dan mengklaim
-      hak-hak mereka untuk komunitas regional yang berkelanjutan, inklusif,
-      berpusat pada orang, dan digerakkan oleh pemuda. Jaringan ini bertujuan
-      untuk melembagakan dan mendirikan cabang nasionalnya untuk memfokuskan
-      keterlibatan pada isu-isu lokal yang penting dan tepat waktu yang
-      mempengaruhi kaum muda, dan mengkonsolidasikan proposal kebijakan dan
-      agenda untuk diajukan ke kantor-kantor ASEAN yang relevan.
-    </h5>
-
-    <!-- Blue Line About -->
+     <!-- Blue Line About -->
     <div class="bg-update my-5">
       <div class="container">
         <div class="row align-items-start">
@@ -148,6 +120,16 @@
       </div>
     </div>
 
-    <script src="assets/js/bootstrap.min.js"></script>
+    
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
   </body>
 </html>
